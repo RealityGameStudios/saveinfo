@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, "Inter", sans-serif;
+}
+
+body {
+  font-size: 14px;
+  height: 100vh;
+}
+
+button,
+textarea,
+input {
+  border: none;
+  outline: none;
+  background: rgb(240, 240, 240);
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+textarea {
+  resize: none;
+  min-height: 50px;
+  max-height: 350px;
+}
+textarea::-webkit-resizer {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background: gray;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#container {
+  height: 100%;
+}
+#container .app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#container .headerSection .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+#container .headerGrp {
+  position: relative;
+}
+#container .viewSaved {
+  z-index: 15;
+}
+#container .checkPass {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  right: 0%;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  opacity: 0;
+  transform: translateY(-10%) scale(0.95);
+  z-index: -1;
+  transition: 0.2s;
+}
+#container .checkPassAct {
+  opacity: 1;
+  transform: translateY(0%) scale(1);
+  z-index: 10;
+}
+#container main {
+  background: rgb(254, 254, 254);
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#index #container main form {
+  height: 100%;
+}
+#index #container main .inputAreaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#index #container main .inputArea {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#index #container main .header {
+  text-align: center;
+}
+#index #container main .textarea {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 15px;
+  outline: 4px solid rgb(230, 230, 230);
+  border: 4px solid rgb(245, 245, 245);
+}
+#index #container main .textarea textarea {
+  width: 100%;
+  font-weight: 500;
+  background: transparent;
+}
+#index #container main .textarea .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#index #container main .textarea .controls button[type=submit] {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: serif;
+}
+#index #container main .textarea .controls .comments {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#data #container main .dataInserted {
+  padding: 10px;
+}
+#data #container main .dataInserted ul {
+  list-style: none;
+  border-radius: 10px;
+  padding: 5px;
+  background: rgb(245, 245, 245);
+}
+#data #container main .dataInserted ul li {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#data #container main .dataInserted ul li .main {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#data #container main .dataInserted ul li .del button {
+  background: transparent !important;
+}
+#data #container main .dataInserted ul li .text {
+  font-size: 17px;
+}
+#data #container main .dataInserted ul li span {
+  font-size: 17px;
+}
+#data #container main .dataInserted ul li:hover {
+  background: rgb(235, 235, 235);
+}
+#data #container main .dataInserted form {
+  margin: 15px 0;
+}
+#data #container main .dataInserted form button {
+  color: crimson;
+  background: white;
+}
+#data #container main .dataInserted form button:hover {
+  background: crimson;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

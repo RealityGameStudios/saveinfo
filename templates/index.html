@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reality Studios</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <script src="{{ url_for('static', filename='js/global.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/index.js') }}" defer></script>
+</head>
+
+<body id="index">
+
+  <div id="container">
+    <div class="app">
+
+      <header class="headerSection">
+      </header>
+
+      <main>
+        <form action="/" method="POST">
+          <div class="inputAreaContainer">
+            <div class="inputArea">
+              <div class="header">
+                <h1>What's new, Master ?</h1>
+              </div>
+              <div class="textarea">
+                <textarea name="data" placeholder="Type note.."></textarea>
+                <div class="controls">
+                  <div class="controlsGrp">
+                    <div class="comments">
+                      <small>SDL2 C++, HTB, Flask, Playwright</small>
+                    </div>
+                  </div>
+                  <div class="controlsGrp">
+                    <div class="submit">
+                      <button type="submit">&uarr;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
